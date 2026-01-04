@@ -19,9 +19,8 @@ def butter_highpass_filter(data, cutoff,  nyq, order):
     y = filtfilt(b, a, data)
     return y
 
-#df_a = pd.read_csv('Kiihtyvyys.csv')
-#df_m = pd.read_csv('GPSData.csv')
-df = pd.read_csv('combined.csv')
+url ="https://raw.githubusercontent.com/Kaikanga/Fysiikan-loppuprojekti/refs/heads/main/combined.csv"
+df = pd.read_csv(url)
 
 st.title('Pikku happihyppely pakkasessa')
 

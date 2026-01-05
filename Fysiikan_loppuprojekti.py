@@ -19,7 +19,7 @@ def butter_highpass_filter(data, cutoff,  nyq, order):
     y = filtfilt(b, a, data)
     return y
 
-url ="https://raw.githubusercontent.com/Kaikanga/Fysiikan-loppuprojekti/main/combined.csv"
+url = "https://raw.githubusercontent.com/Kaikanga/Fysiikan-loppuprojekti/main/combined.csv"
 df = pd.read_csv(url)
 
 st.title('Pikku happihyppely pakkasessa')
